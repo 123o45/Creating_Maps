@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f62bdbd4ae835f4e1efae527465accd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f62bdbd4ae835f4e1efae527465accd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f62bdbd4ae835f4e1efae527465accd = L.map(
+                "map_5f62bdbd4ae835f4e1efae527465accd",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d0a026b74573357af4f284cc7fe4bdc6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d0a026b74573357af4f284cc7fe4bdc6.addTo(map_5f62bdbd4ae835f4e1efae527465accd);
+        
+    
+            var marker_5a1c37b39ad4eaf706902019058ec4bf = L.marker(
+                [46.1912, -122.1944],
+                {}
+            ).addTo(map_5f62bdbd4ae835f4e1efae527465accd);
+        
+    
+        var popup_5e11fe38572d6bbbee6836d4dda78ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a822249020ad24b8f280f8e5c5efb13 = $(`<div id="html_9a822249020ad24b8f280f8e5c5efb13" style="width: 100.0%; height: 100.0%;">Mount St. Helens</div>`)[0];
+                popup_5e11fe38572d6bbbee6836d4dda78ef3.setContent(html_9a822249020ad24b8f280f8e5c5efb13);
+            
+        
+
+        marker_5a1c37b39ad4eaf706902019058ec4bf.bindPopup(popup_5e11fe38572d6bbbee6836d4dda78ef3)
+        ;
+
+        
+    
+    
+            var marker_8701c6bd767f3679f086115e1196657d = L.marker(
+                [19.4069, -155.2834],
+                {}
+            ).addTo(map_5f62bdbd4ae835f4e1efae527465accd);
+        
+    
+        var popup_456fa509c461a60716153a08d445addf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ecc5703777dee3fb41eda7e27efb17 = $(`<div id="html_c2ecc5703777dee3fb41eda7e27efb17" style="width: 100.0%; height: 100.0%;">Kilauea</div>`)[0];
+                popup_456fa509c461a60716153a08d445addf.setContent(html_c2ecc5703777dee3fb41eda7e27efb17);
+            
+        
+
+        marker_8701c6bd767f3679f086115e1196657d.bindPopup(popup_456fa509c461a60716153a08d445addf)
+        ;
+
+        
+    
+    
+            var marker_cd4dca7c141fe6132d95b1cce5971b94 = L.marker(
+                [35.3606, 138.7274],
+                {}
+            ).addTo(map_5f62bdbd4ae835f4e1efae527465accd);
+        
+    
+        var popup_74cbaf8100c215cd4e2fd3896b3e7a5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b63550b1b5f76626efdd63a233b9e3a4 = $(`<div id="html_b63550b1b5f76626efdd63a233b9e3a4" style="width: 100.0%; height: 100.0%;">Mount Fuji</div>`)[0];
+                popup_74cbaf8100c215cd4e2fd3896b3e7a5c.setContent(html_b63550b1b5f76626efdd63a233b9e3a4);
+            
+        
+
+        marker_cd4dca7c141fe6132d95b1cce5971b94.bindPopup(popup_74cbaf8100c215cd4e2fd3896b3e7a5c)
+        ;
+
+        
+    
+</script>
+</html>
